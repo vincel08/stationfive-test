@@ -10,7 +10,9 @@ app.use(express.urlencoded({
 }))
 
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+  res.json({
+    app: 'stationfive-backend'
+  })
 })
 
 app.post('/message', (req, res) => {
